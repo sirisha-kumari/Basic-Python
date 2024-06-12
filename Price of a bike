@@ -1,0 +1,26 @@
+"""write a program to check the on road price of a bike under the conditions if the price is greater than 72000 then income taxes
+is the 10% of the org price and insurance will be 15% of the actual price 
+if price graeter than 1,50000 and less than 2,00000 thye tax would be 25% and insurance will be 20% 
+if the price above 2 lakh ruppes and tax will be 35 % and insurance will be of 28%
+otherwise min price starts from 72000
+on road =actual price+tax+insurance"""
+
+
+a=int(input("enter the input:"))
+if a>72000 and a<150000 :
+    tax=a*(10/100)
+    insurance=a*(15/100)
+    onroad=a+tax+insurance
+    print("onroad price:",onroad)
+elif a>150000 and a<200000:
+    tax=a*(25/100)
+    insurance=a*(20/200)
+    onroad=a+tax+insurance
+    print("onroad price:",onroad)
+elif a>200000:
+    tax=a*(35/100)
+    insurance=a*(28/100)
+    onroad=a+tax+insurance
+    print("onroad price:",onroad)
+else:
+    print("valid price")
