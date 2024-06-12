@@ -1,0 +1,18 @@
+
+"""
+Multiple Inheritance
+"""
+class Placements:
+    def info(self):
+        print("we have 623 placements and still counting")
+class Department(Placements):
+    def display(self):
+        print("the department names of pragati")
+
+class Pragati(Department,Placements):
+    def welcome(self):
+        print("Welcome to pragati Engineering college")
+ob=Pragati()
+ob.info()
+ob.display()
+ob.welcome()
