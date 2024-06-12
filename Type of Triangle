@@ -1,0 +1,13 @@
+"""
+    write a program to check the type of triangle where you take the input from user and classify accordingly into equivlateral
+    isosceles and scalane
+    """
+a=int(input("enter the "))
+b=int(input("enter the"))
+c=int(input("enter the"))
+if a==b and  c==a :
+    print("equivalent triangle")
+elif (a==b) or (a==c) or (b==c):
+    print("isoscles triangle")
+else:
+    print("scalane triangle")
