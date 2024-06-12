@@ -1,0 +1,16 @@
+
+"""
+overriding
+"""
+class Father:
+    def bike(self):
+        print("kia")
+    def laptop(self):
+        print("laptop with 2Gb ")
+class pras(Father):
+    def laptop(self):
+        print("programming software")
+        print("laptop with 8gb")
+ob=pras()
+ob.bike()
+ob.laptop()
