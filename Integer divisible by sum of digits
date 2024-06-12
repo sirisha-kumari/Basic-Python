@@ -1,0 +1,15 @@
+
+"""
+Integer that is divisible by sum of digits
+"""
+a=int(input("enter the number:"))
+a1=a
+s=0
+while(a>0):
+    d=a%10
+    s=s+d
+    a=a//10
+if(a1%s==0):
+    print("divisible",s)
+else:
+    print("not divisible")
