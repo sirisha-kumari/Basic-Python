@@ -1,0 +1,28 @@
+
+"""
+create a class f15 with functions light,fan,AC 
+light is called it prints out the color of the light which is taken as parameter to the function
+when fan function is called it displays the speed in which it rotates regulator speed pararmeter of the function
+when Ac displays the room temp and outside temp which is taken as parameters
+wrrite a fourth function that is display difference ofdiplays outside temp and room temp of AC and also displays the fan speed
+"""
+class F15:
+    def light(self,color):
+        print("color of the light",color)
+    def fan(self,speed):
+        self.sp=speed
+        print("speed of a regulator",speed)
+    def ac(self,room,outside):
+        self.ro=room
+        self.ou=outside
+        print("room temperature",room)
+        print("outside temperature",outside)
+    def display(self):
+        diff=self.ro-self.ou
+        d=self.sp
+        print("outside temp and room temp of ac and also fan speed",diff,d)
+ob=F15()
+ob.light("blue")
+ob.fan(80)
+ob.ac(10.9,19.5)
+ob.display()
