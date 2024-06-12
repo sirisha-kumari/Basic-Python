@@ -1,0 +1,21 @@
+
+"""
+armstrong number using recursive function
+"""
+def cod(n):
+    if n==0:
+        return 0
+    return 1+cod(n//10)
+count=cod(153)
+def arm(n,c):
+    if n==0:
+        return 0
+    return (n%10)**c+arm(n//10,c)
+def c_arm(n):
+    c=arm(n)
+    return n==arm(n,c)
+number=int(input("enter the number"))
+if c_arm(number):
+    print('armstrong')
+else:
+    print("not armstrong")
